@@ -11,6 +11,9 @@
 # production
 /build
 
+#admin batabase
+/admin/.dbdata
+
 # misc
 .DS_Store
 .env.local
