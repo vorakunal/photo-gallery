@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# Getting Started with Photo Gallery App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+First you need to spin up the admin and main/user database, to do so first you need to [install](https://docs.docker.com/get-docker/) docker, then run this command:
+`docker-compose up --build`
+
+`build` keyword is used because this your first time build this image.
+
+After the image is build you'll run `docker-compose up`.
+
+If you make any changes to the code then you have to build the image again.
+
+Once both the services are live then you can run the scripts.
 
 ## Available Scripts
 
@@ -44,3 +53,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Reference
+
+codewithmosh.com
