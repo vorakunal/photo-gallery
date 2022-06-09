@@ -1,11 +1,15 @@
 # Getting Started with Photo Gallery App
 
-First you need to spin up the admin and main/user database, to do so first you need to [install](https://docs.docker.com/get-docker/) docker, then run this command:
+This app demonstrates the use of microservice architecture. Two diferent services are created, admin & main, used docker-sql image seperately for both the service. Both the services are communicating with each other using Rabbit-MQ, they will get notified if either service performs any operations(CRUD) to the database, following the REST API protocol, and update the interface accordingly. 
+
+Follow the steps to execute the project:
+
+First, you need to spin up the admin and main/user database, to do so first you need to [install](https://docs.docker.com/get-docker/) docker, then run this command:
 `docker-compose up --build`
 
-`build` keyword is used because this your first time build this image.
+The `build` keyword is used because this is your first time building this image.
 
-After the image is build you'll run `docker-compose up`.
+After the image is built you'll run `docker-compose up`.
 
 If you make any changes to the code then you have to build the image again.
 
@@ -44,9 +48,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point, you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However, we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
@@ -56,4 +60,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Reference
 
-codewithmosh.com
+[scalablescripts](https://scalablescripts.com/)
